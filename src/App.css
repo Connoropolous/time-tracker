@@ -1,0 +1,145 @@
+:root {
+  --p-shadow-from-dim-light: rgba(0, 0, 0, 0.2);
+  --p-shadow-from-ambient-light: rgba(23, 24, 24, 0.05);
+  --p-shadow-from-direct-light: rgba(0, 0, 0, 0.15);
+  --p-top-bar-shadow: 0 2px 2px -1px var(--p-shadow-from-direct-light);
+  --border: rgba(225, 227, 229, 1);
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(246, 246, 247);
+  color: rgb(32, 34, 35);
+}
+
+.header {
+  box-sizing: border-box;
+  padding: 12px;
+  box-shadow: var(--p-top-bar-shadow);
+  background: white;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.below-header {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.left-screen-nav-menu {
+  height: 100%;
+  border-right: 0.0625rem solid var(--border);
+}
+
+.no-link-underline {
+  text-decoration: none;
+}
+
+.main-panel {
+  padding: 30px;
+  box-sizing: border-box;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+.main-panel-header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.general-list {
+  width: 100%;
+}
+
+.create-form {
+  width: 40%;
+}
+
+.general-list-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: var(--sl-spacing-small);
+}
+
+.data-table {
+  display: flex;
+  flex-direction: row;
+  margin-top: var(--sl-spacing-small);
+}
+
+.data-table-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.data-table-header {
+  font-weight: 500;
+  height: 1.8rem;
+}
+
+.data-table-cell {
+  padding-top: var(--sl-spacing-small);
+  padding-bottom: var(--sl-spacing-small);
+  padding-right: var(--sl-spacing-small);
+  height: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.data-table-bold {
+  font-weight: 600;
+}
+
+.data-table-header,
+.data-table-cell {
+  border-bottom: 0.0625rem solid var(--border);
+  /* padding: 0 var(--sl-spacing-small); */
+}
+
+.resource-list-resource-quantity {
+  margin-right: var(--sl-spacing-small);
+}
+
+/* Transfer */
+
+.resource-select-menu-item {
+  width: 100%;
+}
+.resource-select-menu-item > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* Quantity Adjust Component */
+
+.quantity-adjust {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* Create Resource */
+
+.resource-balance-and-units {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.active-time-entry-chart {
+  width: 400px;
+  height: 400px;
+  margin: 40px auto;
+}

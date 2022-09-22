@@ -1,0 +1,7 @@
+---
+manifest_version: "1"
+name: hrea_time_tracker
+ui:
+  bundled: "../ui.zip"
+happ_manifest:
+  bundled: "./hrea_suite.happ"
