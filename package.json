@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "REACT_APP_HC_APP_ID='Hrea-graphql-explorer' REACT_APP_HC_CONN_URL='ws://localhost:17840' BROWSER=none react-scripts start",
+    "start": "REACT_APP_HC_APP_ID='hrea_suite' REACT_APP_HC_CONN_URL='ws://localhost:4000' REACT_APP_HC_ADMIN_CONN_URL='ws://localhost:60101' BROWSER=none react-scripts start",
     "build": "bash build.sh",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -26,7 +26,7 @@
   "dependencies": {
     "@apollo/client": "^3.6.9",
     "@shoelace-style/shoelace": "^2.0.0-beta.70",
-    "@vf-ui/graphql-client-holochain": "0.0.1-alpha.13",
+    "@vf-ui/graphql-client-holochain": "0.0.1-alpha.14",
     "graphql": "15.8",
     "randomcolor": "^0.6.2",
     "react": "16.13.1",
